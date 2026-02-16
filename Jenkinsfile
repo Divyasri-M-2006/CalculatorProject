@@ -17,7 +17,7 @@ pipeline{
   }
   post{
     success{
-      archieveArtifacts artifacts:'*.class',fingerprint:\
+      archieveArtifacts artifacts:'*.class',fingerprint:
 true
     }
     failure{
