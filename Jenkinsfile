@@ -11,7 +11,7 @@ pipeline{
     }
     stage('Run'){
       steps{
-        bat 'javac Calculator 10+5'
+        bat 'java Calculator 10 + 5'
       }
     }
   }
