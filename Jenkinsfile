@@ -17,8 +17,7 @@ pipeline{
   }
   post{
     success{
-      archieveArtifacts artifacts:'*.class',fingerprint:
-true
+      archiveArtifacts artifacts: '*.class', fingerprint:true
     }
     failure{
       echo 'Build Failed'
